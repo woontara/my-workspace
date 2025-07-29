@@ -1,0 +1,52 @@
+{
+  "claude_code": {
+    "model": "claude-sonnet-4-20250514",
+    "max_tokens": 4096,
+    "timeout": 300,
+    "auto_resume": true
+  },
+  "assistant": {
+    "auto_context": true,
+    "task_persistence": true,
+    "verbose_logging": false,
+    "plugin_system": true,
+    "interactive_mode": true
+  },
+  "integrations": {
+    "superclaude": true,
+    "mcp_servers": [
+      "context7",
+      "sequential", 
+      "magic",
+      "playwright"
+    ],
+    "enable_git_integration": true,
+    "enable_package_manager_detection": true
+  },
+  "plugins": {
+    "enabled": true,
+    "auto_load": true,
+    "builtin_plugins": [
+      "code-analyzer",
+      "project-manager"
+    ],
+    "external_plugin_dir": "~/.claude/plugins"
+  },
+  "ui": {
+    "theme": "dark",
+    "show_context": true,
+    "show_tasks": true,
+    "emoji_support": true
+  },
+  "security": {
+    "safe_mode": false,
+    "allow_file_operations": true,
+    "allow_network_operations": true,
+    "scan_for_secrets": true
+  },
+  "performance": {
+    "cache_enabled": true,
+    "parallel_processing": true,
+    "max_concurrent_tasks": 3
+  }
+}
